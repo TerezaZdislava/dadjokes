@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { render } from 'react-dom';
 import './index.html';
 import './style.css';
-import './assets/img/user01.png';
+//import './assets/img/user01.png';
 import Joke from './Joke/index.jsx';
 
 const jokes = [
