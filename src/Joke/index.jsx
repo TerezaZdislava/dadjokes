@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 //import './style.css';
 import '../assets/img/user01.png';
+import '../assets/img/user02.png';
+import '../assets/img/user03.png';
+import '../assets/img/user04.png';
+import '../assets/img/user05.png';
+import '../assets/img/user06.png';
+import '../assets/img/user07.png';
+import '../assets/img/user08.png';
+import '../assets/img/user09.png';
 
 const Joke = (props) => {
   const [upLikes, setUpLikes] = useState(props.likes);
@@ -17,7 +25,10 @@ const Joke = (props) => {
     <div className="joke">
       <div className="joke__body">
         <div className="joke__user">
-          <img className="user-avatar" src={'../assets/img/user01.png'} />
+          <img
+            className="user-avatar"
+            src={'../assets/img/' + props.id + '.png'}
+          />
           <p className="user-name">{props.name}</p>
         </div>
 

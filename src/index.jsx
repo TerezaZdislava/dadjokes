@@ -81,17 +81,17 @@ const jokes = [
 ];
 
 const App = () => {
-  const [currency, setCurrency] = useState('USD');
-
   return (
     <>
-      <Joke
-        name={jokes[0].name}
-        id={jokes[0].id}
-        text={jokes[0].text}
-        likes={jokes[0].likes}
-        dislikes={jokes[0].dislikes}
-      />
+      {jokes.map((joke) => (
+        <Joke
+          name={joke.name}
+          id={joke.id}
+          text={joke.text}
+          likes={joke.likes}
+          dislikes={joke.dislikes}
+        />
+      ))}
     </>
   );
 };
